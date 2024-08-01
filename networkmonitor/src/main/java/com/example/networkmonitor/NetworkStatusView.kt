@@ -28,8 +28,8 @@ class NetworkStatusView @JvmOverloads constructor(
 
   var timeOut: Long = 3000
 
-  var connectionOnText = "Connected..."
-  var connectionOffText = "Disconnected..."
+  var connectionOnText = "Connected"
+  var connectionOffText = "Disconnected"
 
   var connectionOnbackgroundColor = Color.CYAN
   var connectionOffbackgroundColor = Color.GRAY
@@ -145,7 +145,7 @@ class NetworkStatusView @JvmOverloads constructor(
     }
   }
 
-  fun unregisterNetworkMonitor() {
+  fun stopMonitoring() {
     networkMonitor.unregisterCallback()
   }
 }

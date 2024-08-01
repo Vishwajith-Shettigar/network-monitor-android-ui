@@ -16,6 +16,6 @@ class MainActivity : AppCompatActivity() {
 
   override fun onDestroy() {
     super.onDestroy()
-    networkStatusView.unregisterNetworkMonitor()
+    networkStatusView.stopMonitoring()
   }
 }
