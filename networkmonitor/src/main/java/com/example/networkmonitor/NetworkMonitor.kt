@@ -1,4 +1,4 @@
-package com.example.network_monitoring
+package com.example.networkmonitor
 
 import android.content.Context
 import android.net.ConnectivityManager

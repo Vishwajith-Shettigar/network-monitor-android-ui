@@ -1,4 +1,4 @@
-package com.example.network_monitoring
+package com.example.networkmonitor
 
 import android.content.Context
 import android.graphics.Color
@@ -13,7 +13,7 @@ import android.widget.LinearLayout
 import androidx.core.content.res.ResourcesCompat
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
-import com.example.network_monitoring.databinding.ViewNetworkStatusBinding
+import com.example.networkmonitor.databinding.ViewNetworkStatusBinding
 import kotlinx.coroutines.*
 
 class NetworkStatusView @JvmOverloads constructor(
@@ -145,7 +145,7 @@ class NetworkStatusView @JvmOverloads constructor(
     }
   }
 
-  fun onDestroy() {
+  fun unregisterNetworkMonitor() {
     networkMonitor.unregisterCallback()
   }
 }
