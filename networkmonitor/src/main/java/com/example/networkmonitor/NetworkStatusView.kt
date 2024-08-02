@@ -96,7 +96,7 @@ class NetworkStatusView @JvmOverloads constructor(
    * Animation code taken from SO thread
    * (https://stackoverflow.com/questions/23925907/slidedown-and-slideup-layout-with-animation).
    */
-  fun setVisible(v: View) {
+  private fun setVisible(v: View) {
     v.measure(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT)
     val targetHeight = v.measuredHeight
     v.layoutParams.height = 1
@@ -117,7 +117,7 @@ class NetworkStatusView @JvmOverloads constructor(
     v.startAnimation(a)
   }
 
-  fun setHide(v: View) {
+  private fun setHide(v: View) {
     val initialHeight = v.measuredHeight
     val a: Animation = object : Animation() {
       override fun applyTransformation(interpolatedTime: Float, t: Transformation?) {
@@ -145,7 +145,7 @@ class NetworkStatusView @JvmOverloads constructor(
     }
   }
 
-  fun unregisterNetworkMonitor() {
+  fun stopMonitoring() {
     networkMonitor.unregisterCallback()
   }
 }

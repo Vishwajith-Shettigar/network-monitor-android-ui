@@ -38,7 +38,6 @@ class NetworkMonitor(context: Context) {
   }
 
   init {
-
     if (!isNetworkAvailable)
       isFirstTime = false
 
