@@ -21,7 +21,7 @@ To use this library in your project, add the following dependency to your `build
 
 ```gradle
 dependencies {
-     implementation 'com.github.Vishwajith-Shettigar:network-monitor-android-ui:1.0.1'
+     implementation 'com.github.Vishwajith-Shettigar:network-monitor-android-ui:1.0.2'
 }
  ```
 
