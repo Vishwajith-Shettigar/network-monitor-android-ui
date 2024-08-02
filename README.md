@@ -7,7 +7,6 @@ A Kotlin-based Android library that provides a customizable `NetworkStatusView` 
 - Monitors network connectivity status.
 - Provides customizable UI for connected and disconnected states.
 - Smooth animations for showing and hiding the network status view.
-- Easy to integrate into any Android project.
 
 ## Screenshots
 
@@ -42,12 +41,12 @@ dependencyResolutionManagement {
 
 <br>
 
-### 1. Network Monitoring with UI
-### 2. Network Monitoring without UI
+### 1. [Network Monitoring with UI](#network-monitoring-with-ui)
+### 2. [Network Monitoring without UI](#network-monitoring-without-ui)
 
 <br>
 
-# 1. Network Monitoring with UI
+# 1. Network Monitoring with UI.
 
 Add the NetworkStatusView to your layout:
 
@@ -118,7 +117,7 @@ Exposed Methods and Properties <br>
 `getNetworkStatus()`: Returns True if the device has internet connectivity, false otherwise.
 
 
-# 2. Network Monitoring without UI
+# 2. Network Monitoring without UI.
 
 ## Example
 
