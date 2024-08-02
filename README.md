@@ -13,7 +13,7 @@ A Kotlin-based Android library that provides a customizable `NetworkStatusView` 
 
 | Connected | Disconnected |
 |-----------|--------------|
-| <img src="https://github.com/user-attachments/assets/758a5cb8-90b8-4d9d-a939-a336b3c724f9" alt="network_on" width="200"/> | <img src="https://github.com/user-attachments/assets/e3f850d7-b12e-4e4b-a204-0fcd51af3d28" alt="no_network" width="200"/> |
+| <img src="https://github.com/user-attachments/assets/758a5cb8-90b8-4d9d-a939-a336b3c724f9" alt="network_on" width="400"/> | <img src="https://github.com/user-attachments/assets/e3f850d7-b12e-4e4b-a204-0fcd51af3d28" alt="no_network" width="400"/> |
 
 ## Installation
 
