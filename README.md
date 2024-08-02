@@ -46,7 +46,7 @@ dependencyResolutionManagement {
 
 <br>
 
-# 1. Network Monitoring with UI
+# 1. Network Monitoring with UI.
 
 Add the NetworkStatusView to your layout:
 
@@ -117,7 +117,7 @@ Exposed Methods and Properties <br>
 `getNetworkStatus()`: Returns True if the device has internet connectivity, false otherwise.
 
 
-# 2. Network Monitoring without UI
+# 2. Network Monitoring without UI.
 
 ## Example
 
