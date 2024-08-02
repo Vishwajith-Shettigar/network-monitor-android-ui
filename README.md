@@ -41,8 +41,8 @@ dependencyResolutionManagement {
 
 <br>
 
-### 1. Network Monitoring with UI
-### 2. Network Monitoring without UI
+### [Network Monitoring with UI.](#network-monitoring-with-ui)
+### [Network Monitoring without UI.](#network-monitoring-without-ui)
 
 <br>
 
