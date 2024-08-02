@@ -38,9 +38,16 @@ dependencyResolutionManagement {
 }
 ```
 
-## Usage
+# Usage
 
-# Network Monitoring with UI
+<br>
+
+### 1. Network Monitoring with UI
+### 2. Network Monitoring without UI
+
+<br>
+
+# 1. Network Monitoring with UI
 
 Add the NetworkStatusView to your layout:
 
@@ -109,3 +116,44 @@ Exposed Methods and Properties <br>
 `connectionOnDrawableResourceId: Int`: Drawable resource ID for the icon when connected. Default is R.drawable.network_on.<br>
 `connectionOffDrawableResourceId: Int`: Drawable resource ID for the icon when disconnected. Default is R.drawable.network_off.<br>
 `getNetworkStatus()`: Returns True if the device has internet connectivity, false otherwise.
+
+
+# 2. Network Monitoring without UI
+
+## Example
+
+```
+class NetworkMonitorWithoutUi  : AppCompatActivity() {
+  private lateinit var  networkMonitor: NetworkMonitor
+
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main)
+
+    // Network monitoring api.
+    networkMonitor = NetworkMonitor(this)
+
+    networkMonitor.networkStatus.observe(this) {
+      if (it) {
+        // Connection on
+        Log.e("#", it.toString() + "  " + networkMonitor.isNetworkAvailable())
+      } else {
+        // Connection off
+        Log.e("#", it.toString() + "  " + networkMonitor.isNetworkAvailable())
+      }
+    }
+
+    // If you dont want to observe.
+    val isNetworkAvailable=networkMonitor.isNetworkAvailable()
+
+  }
+
+  override fun onDestroy() {
+    super.onDestroy()
+    // Stop obeserving.
+    networkMonitor.unregisterCallback()
+  }
+}
+
+```
+
