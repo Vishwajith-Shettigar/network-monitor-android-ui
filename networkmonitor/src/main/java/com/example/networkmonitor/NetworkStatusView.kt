@@ -145,6 +145,10 @@ class NetworkStatusView @JvmOverloads constructor(
     }
   }
 
+  fun getNetworkStatus():Boolean{
+    return networkMonitor.isNetworkAvailable()
+  }
+
   fun stopMonitoring() {
     networkMonitor.unregisterCallback()
   }
